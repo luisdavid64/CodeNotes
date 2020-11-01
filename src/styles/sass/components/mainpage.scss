@@ -1,0 +1,17 @@
+
+.main-page {
+    @include set-flex(row);
+    height: 93.5%;
+    width: 100%;
+    
+    &--blue {
+        background-color: $dark-blue;
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+
+    .main-page {
+        flex-wrap: wrap; 
+    }
+}

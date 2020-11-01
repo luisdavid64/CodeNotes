@@ -1,0 +1,18 @@
+
+@mixin set-flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin set-palette($bg, $text) {
+    background-color: $bg;
+    color: $text;
+    font-size: 1.0em;
+}
+
+@mixin centered-flex() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,52 @@
+
+.note-header {
+    @include set-palette($dark-blue, $cream);
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    height: 6.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        margin: 0;
+        margin-left: 1rem;
+        padding: 0;
+        cursor: default;
+
+        margin-top: 0;
+        font-family: $concert-one;
+        font-size: 2.4rem;
+
+        &--reverse {
+            color: $mate-green;
+        }
+    }
+
+    &__button {
+        border: none;
+        @include set-palette($dark-blue, $cream);
+        @include set-flex(row);
+        align-items: center;
+        height: 100%;
+        padding-right: 1rem;
+        margin: auto 0;
+        padding-left: 1rem;
+        font-size: 1.0rem;
+        border-left: 2px solid $cream;
+        font-family: $concert-one;
+        text-decoration: none;
+        h2 {
+            &:hover {
+       
+                transform: scale(1.1);
+            }
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+
+}

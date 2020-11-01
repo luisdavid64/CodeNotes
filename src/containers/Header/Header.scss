@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+.youtube-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Concert One', cursive;
+    height: 8vh;
+    width: 100vw;
+    background-color: #0d0d0d;
+    color: #EEEEEE;
+
+    &__title {
+        margin-left: 1rem;
+        display: flex;
+        justify-self: left;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    &__button {
+        width: 6vw;
+        border: none;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #EEEEEE;
+        background-color: #0d0d0d;
+        cursor: pointer;
+
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover { 
+            transform: scale(1.2);
+        }
+    }
+
+    & form {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    } 
+    
+    &__input {
+        height: 60%;
+        width: 30vw ;
+        font-size: 1rem;
+        color: #EEEEEE;
+        background-color: rgb(35, 35, 35);
+        margin-right: 8rem;
+        border: none;
+
+        &::placeholder {
+            color: #AFAFAF;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__image {
+        max-width: 40%;
+        max-height: 70%;
+    }
+}
+
+span {
+    color: #0E76A8;
+}
+
+.empty {
+    display: flex;
+    font-family: 'Concert One', cursive;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+    height: 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+}

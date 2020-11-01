@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+.form {
+    font-family:"droid serif";
+    font-size: 2.5rem;
+    color: $dark-blue;
+    margin: auto;
+    border-radius: 30px;
+    background-color: $bright-green;
+    width: 400px;
+    height: 52vh;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    & > *:nth-child(4) {
+        margin: 2rem 0;
+    }
+
+    &__p { 
+        font-style: italic;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        
+        &--alert {
+            position: absolute;
+            font-weight: bold;
+            top: 59.7vh;
+            margin-top: 1rem;
+            color: red;
+            font-size: 1.2rem;
+        }
+    }
+
+    & h1 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    &__button {
+        width: 80%;
+        font-family:"droid serif";
+        height: 20%;
+        border: none;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        background-color: #b44471;
+        color: white;
+    }
+
+    &__input {
+        border:none;
+        outline:none;
+        font-size: 1.5rem;
+        display:inline-block;
+        height:20%;
+        width: 80%;
+        vertical-align:middle;
+        position:relative;
+        bottom:14px;
+        right:9px;
+        border-radius:22px;
+        box-sizing:border-box;
+        padding:0 18px; 
+    }
+}
+
+
+@media only screen and (max-width: $large-mobile) {
+    .form {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        border-radius: 0;
+
+        &__input {
+            height: 10%;
+        }
+
+        &__button {
+            height: 10%;
+        }
+    }
+
+
+}

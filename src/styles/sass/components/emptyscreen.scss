@@ -1,0 +1,16 @@
+.empty-div {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $grayed-out;
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: $tablet) {
+    .empty-div {
+        font-size: 2rem;
+    }
+}

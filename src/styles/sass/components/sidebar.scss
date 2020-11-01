@@ -1,0 +1,96 @@
+.sidebar {
+    @include set-palette($bright-green, $dark-blue);
+    margin-top: 0;
+    height: 100%;
+    width: 180px;
+    min-width: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 0;
+    overflow-y: scroll;
+
+}
+
+.note-list {    
+    @include set-flex(column);
+    align-items: flex-start;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+
+    &__item {
+        overflow-y: hidden;
+        width: 100%;
+        height: 4em;
+        border-bottom: 3px solid $dark-blue;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+    }
+    &__div {
+        @include set-flex(row);
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 3px solid $dark-blue;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: $dark-blue;
+        transition: 0.2s;
+        &:hover {
+            background-color: $cream;
+        }
+    }
+
+    &__icon {
+        font-size: 1.3;
+        margin-left: 0.4rem;
+        margin-right: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+
+    .sidebar {
+        @include set-flex(row);
+        width: 100%;
+        height: 160px;
+        margin-bottom: 0;
+        overflow-x: scroll;
+        
+    }
+
+    .note-list {
+        @include set-flex(row);
+        margin-bottom: 0;
+        height: 100%;
+        width: 100%;
+        overflow-y: hidden;
+        &__item {
+            box-sizing: border-box;
+            overflow: hidden;
+            flex-basis: 50%;
+            min-width: 33vw;
+            height: 100%;
+            border-top: 20px solid $dark-blue;
+            border-left: 10px solid $dark-blue;
+            border-right: 10px solid $dark-blue;
+            border-bottom: 20px solid $dark-blue;
+            font-weight: bolder;
+            word-wrap: break-word;
+        }
+        &__div {
+            @include set-flex(row);
+            font-family: $concert-one;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            font-size: 5vw;
+            font-weight: bolder;
+            word-wrap: break-word;
+        }
+    }
+}
